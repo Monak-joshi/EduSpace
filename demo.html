@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gall{
+            height: 300px;
+            width: 30%;
+            display: flex;
+            gap: 5px;
+            
+        }
+        .gall>img{
+            height: 300px;
+            width: 25%;
+            aspect-ratio: 1/1;
+            border: 2px solid black;
+            border-radius: 25px;
+            transition: all ease-in .9s;
+            cursor:grab;
+
+        }
+        .gall>img:hover{
+            width: 100%;
+            
+        }
+        .gall>img:active{
+            width: 100vw;
+            height: 80vh;
+            cursor: grabbing;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="log()">loging</button>
+    <button onclick="Rgi()">Register</button>
+    <h1 id="h">Wellcome</h1>
+    <div id="loging">
+        <input type="email" placeholder="EMAil">
+    </div>
+    <div style="display: none;" id="Register">
+        <input type="password" placeholder="password">
+    </div>
+    <div class="gall">
+        <img src="gecBG.png" alt="">
+        <img src="slider2.png" alt="">
+        <img src="slider3.png" alt="">
+    </div>
+    <script>
+        function log() {
+            document.getElementById("loging").style.display = "block";
+            document.getElementById("Register").style.display = "none";
+        }
+        function Rgi() {
+            document.getElementById("loging").style.display = "none";
+            document.getElementById("Register").style.display = "block";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    animation: slider 10s step-end 0s infinite ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+#logo{
+    text-align: center;
+    color:white;
+}
+#logingBtr{
+    background-color: #0d6efd;
+    color: white;
+}
+#RegisterBtr{
+    color: white;
+}
+main{
+    padding: 5%;
+    background-color: rgba(0, 0, 0, .5);
+    border: 2px solid grey;
+    border-radius: 20%;
+    height: 60%;
+    width: 30%;
+    position: relative;
+    top: 10vh;    
+    overflow-wrap: normal;
+}
+.category{
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 10px;
+}
+@keyframes slider {
+    0%{background-image:url(https://gecpatan.ac.in/images/Home/slider2.png);}
+    50%{background-image:url(https://gecpatan.ac.in/images/Home/slider3.png);}
+    100%{background-image:url(https://gecpatan.ac.in/images/Home/slider1.png);}
+}
+.btr{
+    padding: 10px;
+    border-radius: 25%;
+    background-color:#0d6efd;
+    color: white;
+    transition: all ease-in .1s;
+    
+}
+
+.btr:active{
+    transform: scale(.7) ;
+    
+}
+.btr:hover{
+    border: 2px solid black;
+    background-color: white;
+    color:#0d6efd;
+    box-shadow: 5px 5px 10px #0d6efd;
+}
